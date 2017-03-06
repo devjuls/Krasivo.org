@@ -1,0 +1,12 @@
+node_modules/
+bower_components/
+resource/
+psd/
+build/
+.idea
+*.sublime*
+*.log
+*.psd
+*.ai
+*.pdf
+*.lock

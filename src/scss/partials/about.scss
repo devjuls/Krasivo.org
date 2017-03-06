@@ -1,0 +1,37 @@
+.about__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 87px;
+}
+
+.about__info, .about__image {
+  flex: 0 1 48%;
+}
+
+.about__title {
+  font-size: 24px;
+  font-weight: 700;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 31px;
+    height: 3px;
+    background-color: $brown;
+    margin-bottom: 10px;
+  }
+}
+
+.about__text {
+  font-size: 18px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .about__wrapper {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,94 @@
+.footer {
+  border-top: 1px solid $brown;
+  padding-top: 26px;
+  padding-bottom: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts {
+  font-size: 16px;
+  font-weight: 500;
+  color: $brown;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer__nav-list {
+  li {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 700;
+      color: $BLACK;
+      text-transform: uppercase;
+      padding: 0 10px 0 5px;
+      border-right: 2px solid $BLACK;
+      transition: color 0.3s;
+    }
+
+    a[href] {
+      &:hover {
+        color: $brown;
+      }
+    }
+
+    &:last-child a {
+      border: none;
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-weight: 300;
+  color: $BLACK;
+  text-transform: uppercase;
+}
+
+.socials__item {
+  display: inline-block;
+  margin-left: 18px;
+
+  a {
+    display: block;
+    width: 22px;
+    height: 22px;
+  }
+
+  &--fb a {
+    background: url('../../img/icons/icon-fb.png') center center no-repeat;
+
+    &:hover {
+      background: url('../../img/icons/icon-fb-hover.png') center center no-repeat;
+    }
+  }
+
+  &--inst a {
+    background: url('../../img/icons/icon-insta.png') center center no-repeat;
+
+    &:hover {
+      background: url('../../img/icons/icon-insta-hover.png') center center no-repeat;
+    }
+  }
+
+  &--vk a {
+    background: url('../../img/icons/icon-vk.png') center center no-repeat;
+
+    &:hover {
+      background: url('../../img/icons/icon-vk-hover.png') center center no-repeat;
+    }
+  }
+}
+

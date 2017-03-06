@@ -1,0 +1,158 @@
+.header__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 40px;
+}
+
+.logo__image {
+  margin-left: 58px;
+}
+
+.logo__text {
+  margin-top: -30px;
+  font-size: 14px;
+  font-weight: 400;
+  color: $brown;
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: $brown;
+    margin-right: 5px;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  li {
+    padding-left: 12px;
+    padding-right: 12px;
+
+    a {
+      display: block;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $BLACK;
+      font-size: 14px;
+      font-weight: 700;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.3s;
+    }
+
+    a[href]:hover {
+      border-color: $brown;
+    }
+  }
+}
+
+.order-call {
+  margin-left: 40px;
+  text-align: center;
+}
+
+.order-call__phone {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: $BLACK;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $brown;
+  }
+}
+
+.order-call__button {
+  display: block;
+  text-transform: none;
+  padding: 5px 16px;
+}
+
+.slider {
+  li {
+    position: relative;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px;
+
+    p {
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 0;
+    }
+  }
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .nav__list {
+    flex-direction: column;
+
+    li a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .slider figcaption p {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .header__top {
+    flex-direction: column;
+  }
+
+  .logo, .nav__list, .order-call {
+    margin: 20px 0;
+  }
+
+  .slider figcaption p {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .slider {
+    li img {
+      opacity: 0.7;
+    }
+  }
+}
