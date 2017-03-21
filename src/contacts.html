@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="RU-ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакты</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="devjuls">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<!--[if lt IE 8]>
+<p class="chromeframe">Похоже, что Вы используете устаревший браузер. Пожалуйста, <a
+        href="http://browsehappy.com/">скачайте новый браузер абсолютно бесплатно</a> или <a
+        href="http://www.google.com/chromeframe/?redirect=true">активируйте Google Chrome Frame</a></p>
+<![endif]-->
+<div class="wrapper">
+  <header class="header">
+    <div class="container">
+
+      <div class="header__top">
+
+        <a href="." class="logo">
+          <div class="logo__image">
+            <img src="img/logo.png" alt="логотип Krasivo.org" width="120" height="56">
+          </div>
+          <div class="logo__text">Кованная мебель</div>
+        </a> <!-- /logo  -->
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a href=".">Главная</a>
+            </li>
+            <li>
+              <a href="gallery.html">Галерея</a>
+            </li>
+            <li>
+              <a href="order.html">Как заказать</a>
+            </li>
+            <li>
+              <a>Контакты</a>
+            </li>
+          </ul> <!-- /nav__list  -->
+        </nav>
+
+        <div class="order-call">
+          <a class="order-call__phone" href="tel:+79859269955">+7 (985) 926 99 55</a>
+          <a class="btn btn--empty order-call__button open-popup-link js-order-call" href="#callback">Обратный звонок</a>
+          <div id="callback" class="popup mfp-hide">
+            <div class="popup__top">Заполните поля и мы вам перезвоним</div>
+            <div class="popup__bottom">
+              <form method="post">
+                <input type="text" class="input input--callback" name="callback-name" placeholder="Имя">
+                <input type="tel" class="input input--callback" name="contacts-phone" placeholder="Телефон" required>
+                <select class="input input--callback" name="callback-time">
+                  <option disabled selected>Удобное время</option>
+                  <option value="1">с 9 до 12</option>
+                  <option value="2">с 14 до 18</option>
+                  <option value="3">с 18 до 21</option>
+                </select>
+                <button type="submit" class="btn btn--filled btn--callback">Вызов</button>
+              </form>
+            </div> <!-- /popup__bottom  -->
+          </div> <!-- /popup  -->
+        </div> <!-- /order-call  -->
+
+
+      </div> <!-- /header__top  -->
+    </div> <!-- /container  -->
+  </header>
+
+  <div class="page-top">
+    <div class="container">
+      <h1 class="page-title">Контакты</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a href="/">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a>Контакты</a>
+        </li>
+      </ul>
+    </div> <!-- /container  -->
+  </div> <!-- /page-top  -->
+
+  <main class="main-content contact-info">
+    <div class="container">
+      <div class="map">
+        <div class="yandex-map" id="map">
+      </div>
+
+      <h2 class="contact-info__title">Контакты</h2>
+      <div class="contact-info__text">
+        <p>Адрес: 143005,  г.Одинцово, ул.Транспортная, д.2 (Территория Московского насосного завода).</p>
+        <p>Email: <a href="mailto:info@krasivo.org">info@krasivo.org</a></p>
+        <p>Телефон: <a href="tel:+79859269955">+7 (985) 926 99 55</a></p>
+      </div> <!-- /contact-info__text  -->
+
+      <h2 class="contact-info__title">Вызов замерщика</h2>
+      <form method="post" class="contact-info__form">
+        <div class="form-row">
+          <input type="text" class="input input--contacts" name="contacts-name" placeholder="Имя">
+          <input type="tel" class="input input--contacts" name="contacts-phone" placeholder="Телефон" required>
+          <select class="input input--contacts" name="contacts-time">
+            <option disabled selected>Удобное время</option>
+            <option value="1">с 9 до 12</option>
+            <option value="2">с 14 до 18</option>
+            <option value="3">с 18 до 21</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <input type="email" class="input input--contacts" name="contacts-email" placeholder="Email">
+          <select class="input input--contacts" name="contacts-type" id="">
+            <option disabled selected>Выберите тип мебели</option>
+            <option value="1">кровати</option>
+            <option value="2">стулья</option>
+            <option value="3">зеркала</option>
+            <option value="4">вешалки</option>
+            <option value="5">консоли</option>
+            <option value="6">столы</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <textarea class="input input--contacts" name="contacts-message" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
+        </div>
+        <button type="submit" class="btn btn--filled btn--contacts">Отправить</button>
+      </form>
+
+
+
+    </div> <!-- /container  -->
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="contacts">
+        <div class="contacts__phone">
+          <span>Телефон: </span><a href="tel:+79859269955">+7 (985) 926 99 55</a>
+        </div> <!-- /contacts__phone  -->
+        <div class="contacts__email">
+          <span>E-mail: </span><a href="mailto:info@krasivo.org">info@krasivo.org</a>
+        </div> <!-- /contacts__email  -->
+      </div> <!-- /contacts  -->
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li>
+            <a href=".">Главная</a>
+          </li>
+          <li>
+            <a href="gallery.html">Галерея</a>
+          </li>
+          <li>
+            <a href="order.html">Как заказать</a>
+          </li>
+          <li>
+            <a>Контакты</a>
+          </li>
+        </ul> <!-- /footer__nav-list  -->
+        <div class="copyright">&copy; 2017 krasivo.org</div>
+      </nav>
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__item socials__item--fb">
+            <a href="#">
+            <span class="visuallyhidden">Facebook</span>
+            </a>
+          </li>
+          <li class="socials__item socials__item--inst">
+            <a href="#"><span class="visuallyhidden">Instagram</span></a>
+          </li>
+          <li class="socials__item socials__item--vk">
+            <a href="#"><span class="visuallyhidden">Vkontakte</span></a>
+          </li>
+        </ul> <!-- /socials__list  -->
+      </div> <!-- /socials  -->
+    </div> <!-- /container  -->
+  </footer>
+
+
+</div> <!-- /wrapper  -->
+
+<!-- JQuery  -->
+  <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+
+<!-- yandex map  -->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+<script src="js/main.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+
+    $(".contact-info__form").submit(function(e) { //устанавливаем событие отправки для формы
+      e.preventDefault();
+      var name = $(this).find('.input--name').val();
+      var phone = $(this).find('.input--phone').val();
+
+      $.ajax({
+        type: "POST", //Метод отправки
+        url: "send-form.php", //путь до php файла отправителя
+        data: {name: name, phone: phone},
+        success: function() {
+               //код в этом блоке выполняется при успешной отправке сообщения
+               alert("Ваше сообщение отправлено!");
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

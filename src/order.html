@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="RU-ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Как заказать</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="devjuls">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<!--[if lt IE 8]>
+<p class="chromeframe">Похоже, что Вы используете устаревший браузер. Пожалуйста, <a
+        href="http://browsehappy.com/">скачайте новый браузер абсолютно бесплатно</a> или <a
+        href="http://www.google.com/chromeframe/?redirect=true">активируйте Google Chrome Frame</a></p>
+<![endif]-->
+<div class="wrapper">
+  <header class="header">
+    <div class="container">
+
+      <div class="header__top">
+
+        <a href="." class="logo">
+          <div class="logo__image">
+            <img src="img/logo.png" alt="логотип Krasivo.org" width="120" height="56">
+          </div>
+          <div class="logo__text">Кованная мебель</div>
+        </a> <!-- /logo  -->
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a href=".">Главная</a>
+            </li>
+            <li>
+              <a href="gallery.html">Галерея</a>
+            </li>
+            <li>
+              <a>Как заказать</a>
+            </li>
+            <li>
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul> <!-- /nav__list  -->
+        </nav>
+
+        <div class="order-call">
+          <a class="order-call__phone" href="tel:+79859269955">+7 (985) 926 99 55</a>
+          <a class="btn btn--empty order-call__button open-popup-link js-order-call" href="#callback">Обратный звонок</a>
+          <div id="callback" class="popup mfp-hide">
+            <div class="popup__top">Заполните поля и мы вам перезвоним</div>
+            <div class="popup__bottom">
+              <form method="post">
+                <input type="text" class="input input--callback" name="callback-name" placeholder="Имя">
+                <input type="tel" class="input input--callback" name="contacts-phone" placeholder="Телефон" required>
+                <select class="input input--callback" name="callback-time">
+                  <option disabled selected>Удобное время</option>
+                  <option value="1">с 9 до 12</option>
+                  <option value="2">с 14 до 18</option>
+                  <option value="3">с 18 до 21</option>
+                </select>
+                <button type="submit" class="btn btn--filled btn--callback">Вызов</button>
+              </form>
+            </div> <!-- /popup__bottom  -->
+          </div> <!-- /popup  -->
+        </div> <!-- /order-call  -->
+
+      </div> <!-- /header__top  -->
+    </div> <!-- /container  -->
+  </header>
+
+  <div class="page-top">
+    <div class="container">
+      <h1 class="page-title">Как заказать</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a href="/">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a>Как заказать</a>
+        </li>
+      </ul>
+    </div> <!-- /container  -->
+  </div> <!-- /page-top  -->
+
+  <main class="main-content">
+    <div class="container">
+      <section class="info">
+        <h2 class="info__title">Этапы заказа</h2>
+        <ul class="info__list">
+          <li>
+            <div class="info__icon"><img src="img/icons/forms.png" alt=""></div>
+            <p>Заполняете бланк обратной формы</p>
+          </li>
+          <li>
+            <div class="info__icon"><img src="img/icons/manager.png" alt=""></div>
+            <p>Вам перезванивает сотрудник магазина для уточнения деталей</p>
+          </li>
+          <li>
+            <div class="info__icon"><img src="img/icons/agreement.png" alt=""></div>
+            <p>Подписываем с Вами договор, определяемся с вариантом доставки и способом оплаты</p>
+          </li>
+        </ul> <!-- /info__list  -->
+        <div class="info__text">
+          <p>Вы можете внести любые изменения на этапе согласования. Вся мебель производится под заказ, поэтому Ваши дополнения не отразятся на цене. </p>
+          <p>Счета, выставленные нашей компанией действуют в течении 3х банковских дней. Если в указанное время оплата не поступила, счет аннулируется. Для восстановления счета, необходимо обратиться к менеджеру нашей компании или оформить новый заказ.</p>
+          <p>Студия кованой мебели работает как с физическими так и с юридическими лицами. В связи с тем, что большинство изделий производится под заказ, мы вынуждены брать предоплату
+за товар, дабы избежать маркетинговых рисков.</p>
+          <p>Предоплата по договору составляет <b>70%</b> стоимости. Срок изготовления изделия <b>14 дней</b>.</p>
+        </div> <!-- /info__text  -->
+      </section>
+
+      <section class="info">
+        <h2 class="info__title">Способы оплаты</h2>
+        <ul class="info__list">
+          <li>
+            <div class="info__icon"><img src="img/icons/wallet.png" alt=""></div>
+            <p>Наличный</p>
+          </li>
+          <li>
+            <div class="info__icon"><img src="img/icons/credit-card.png" alt=""></div>
+            <p>Безналичный</p>
+          </li>
+        </ul> <!-- /info__list  -->
+      </section>
+
+      <section class="info">
+        <h2 class="info__title">Доставка</h2>
+        <div class="info__text">
+          <h3 class="info-subtitle no-margin">Москва и Московская область:</h3>
+          <p>Доставка и сборка по городу в пределах  городов спутников — <b>3000</b> руб (доставка <b>2500</b> руб + <b>500</b> руб сборка) <br>Доставка за пределы — <b>30</b> руб/км.</p>
+          <br>
+          <h3>Время доставки:</h3>
+          <p>Доставка осуществляется в удобные для Вас дни с <b>08:00</b> до <b>20:00</b>.</p>
+          <br>
+          <h3>Регионы:</h3>
+          <p>Доставка в регионы России осуществляется с помощью транспортной компании «Деловые Линии» при <b>100%</b> предоплате заказа.</p>
+          <br>
+          <h3>Примечание:</h3>
+          <br>
+          <p>В день доставки с клиентом свяжется наш менеджер для подтверждения доставки и уточнения времени.</p>
+          <br>
+          <p>Вся продукция поставляется в разобранном виде (в упаковке):</p>
+          <li>— 2 кованые спинки, в некоторых кроватях возможна комплектация одной спинкой.</li>
+          <li>— 2 царги (рамы, соединяющей спинки кровати),</li>
+          <li>— Ортопедическое основание, согласно размеру вашей кровати.</li>
+          <li>— При заказе матраса, он доставляется вместе с кроватью в упакованном виде.</li>
+          <br>
+          <h3>Подъем и сборка:</h3>
+          <br>
+          <p>Стоимость подъема на этаж в многоквартирном доме при работающем лифте — бесплатно. При неработающем лифте либо его отсутствии — стоимость подъема составляет <b>100</b> руб/этаж.</p>
+          <br>
+        </div> <!-- /info__text  -->
+      </section>
+
+    </div> <!-- /container  -->
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="contacts">
+        <div class="contacts__phone">
+          <span>Телефон: </span><a href="tel:+79859269955">+7 (985) 926 99 55</a>
+        </div> <!-- /contacts__phone  -->
+        <div class="contacts__email">
+          <span>E-mail: </span><a href="mailto:info@krasivo.org">info@krasivo.org</a>
+        </div> <!-- /contacts__email  -->
+      </div> <!-- /contacts  -->
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li>
+            <a href=".">Главная</a>
+          </li>
+          <li>
+            <a href="gallery.html">Галерея</a>
+          </li>
+          <li>
+            <a>Как заказать</a>
+          </li>
+          <li>
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul> <!-- /footer__nav-list  -->
+        <div class="copyright">&copy; 2017 krasivo.org</div>
+      </nav>
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__item socials__item--fb">
+            <a href="#">
+            <span class="visuallyhidden">Facebook</span>
+            </a>
+          </li>
+          <li class="socials__item socials__item--inst">
+            <a href="#"><span class="visuallyhidden">Instagram</span></a>
+          </li>
+          <li class="socials__item socials__item--vk">
+            <a href="#"><span class="visuallyhidden">Vkontakte</span></a>
+          </li>
+        </ul> <!-- /socials__list  -->
+      </div> <!-- /socials  -->
+    </div> <!-- /container  -->
+  </footer>
+
+
+</div> <!-- /wrapper  -->
+<script src="js/main.min.js"></script>
+</body>
+</html>

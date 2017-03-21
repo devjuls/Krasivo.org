@@ -1,29 +1,56 @@
-.owl-pagination {
+// Слайдер на главной
+
+.slick-prev, .slick-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 100;
+  opacity: 1;
+}
+
+.slick-prev, .slick-prev:hover, .slick-prev:focus {
+  left: -25px;
+  background: $WHITE url('./../img/icons/icon-prev.png') 25px center no-repeat;
+}
+
+.slick-next, .slick-next:hover, .slick-next:focus {
+  right: -25px;
+  background: $WHITE url('./../img/icons/icon-next.png') 15px center no-repeat;
+}
+
+.slick-prev:before, .slick-next:before {
   display: none;
 }
 
-.owl-theme .owl-controls .owl-buttons .owl-prev {
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  left: -25px;
-  top: calc(50% - 30px);
-  z-index: 100;
-  opacity: 1;
-  background: $WHITE url('../../img/icons/icon-prev.png') center center no-repeat;
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+  opacity: 0.5;
 }
 
-.owl-theme .owl-controls .owl-buttons .owl-next {
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  margin: 0;
+
+// Слайдер на странице товара (с превью)
+
+.top-arrow, .bottom-arrow {
+  width: 20px;
+  height: 20px;
   position: absolute;
-  right: -25px;
-  top: calc(50% - 30px);
   z-index: 100;
-  opacity: 1;
-  background: $WHITE url('../../img/icons/icon-next.png') center center no-repeat;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
+
+.top-arrow {
+  top: -28px;
+  background: url('./../img/icons/scroll-arrow-to-up.png') center center no-repeat;
+}
+
+.bottom-arrow {
+  bottom: -7px;
+  background: url('./../img/icons/scroll-arrow-to-down.png') center center no-repeat;
+}
+

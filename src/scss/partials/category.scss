@@ -1,0 +1,26 @@
+.category__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 85px;
+  border-bottom: 1px solid $brown;
+  margin-bottom: 42px;
+}
+
+.category__image {
+  flex: 1 1 524px;
+  margin-right: 112px;
+}
+
+.category__descr {
+  flex: 1 1 462px;
+}
+
+.category__subtitle {
+  font-size: 24px;
+}
+
+.categoty__text {
+  font-size: 14px;
+}

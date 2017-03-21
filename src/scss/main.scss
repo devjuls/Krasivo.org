@@ -6,8 +6,11 @@
 @import "_misc/adjustment";
 
 // ----- Slider ----- //
-@import "../../node_modules/owlcarousel/owl-carousel/owl.carousel";
-@import "../../node_modules/owlcarousel/owl-carousel/owl.theme";
+@import "_misc/slick";
+@import "_misc/slick-theme";
+
+// ----- Popup ----- //
+@import "_misc/magnific-popup";
 
 // ----- Styles ----- //
 @import "partials/buttons";
@@ -17,3 +20,10 @@
 @import "partials/projects";
 @import "partials/about";
 @import "partials/footer";
+@import "partials/layout";
+@import "partials/gallery";
+@import "partials/category";
+@import "partials/product";
+@import "partials/info";
+@import "partials/contacts";
+

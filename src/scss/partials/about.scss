@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 87px;
+  color: $grey;
 }
 
 .about__info, .about__image {
@@ -28,6 +29,8 @@
   font-size: 18px;
 }
 
+
+//adaptive
 
 @media screen and (max-width: 768px) {
 

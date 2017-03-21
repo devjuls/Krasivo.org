@@ -1,0 +1,130 @@
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+
+  li {
+    max-width: 32.3333%;
+    width: 100%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    flex-basis: 360px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 3px 7px rgba(61, 61, 61, 0.04);
+    overflow: hidden;
+
+    &:hover {
+      box-shadow: 0 3px 7px rgba(61, 61, 61, 0.2);
+    }
+  }
+
+  .gallery__image {
+    display: block;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .gallery__info-link {
+    display: block;
+    height: 100%;
+    border-radius: 0px 0px 5px 5px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+    img {
+      display: block;
+      font-size: 0;
+    }
+}
+
+.gallery__title {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.gallery__info {
+  color: $BLACK;
+  padding: 15px 20px;
+  background-color: $light-grey;
+  border: 1px solid #e8e8e8;
+  border-radius: 0px 0px 5px 5px;
+  height: 100%;
+
+}
+
+.gallery__info--collection {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.gallery__price {
+  font-family: 'PTSans', serif;
+
+  &:after {
+    content: "\20BD";
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+.gallery__list--collection li {
+
+  .gallery__image {
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 5px 5px 0px 0px;
+      background: rgba($brown, 0.8) url('./../img/icons/next-page-ico.png') center center no-repeat;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+  }
+
+    &:hover {
+    .gallery__image:after {
+      opacity: 1;
+    }
+  }
+}
+
+.gallery--similar {
+  padding-top: 38px;
+}
+
+.gallery__subtitle {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+
+//adaptive
+
+@media screen and (max-width: 768px) {
+  .gallery__list li {
+    max-width: 49%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery__list li {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -2,7 +2,7 @@
 <html lang="RU-ru">
 <head>
   <meta charset="UTF-8">
-  <title>Krasivo.org - студия кованной мебели</title>
+  <title></title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="">
@@ -36,20 +36,36 @@
             <a>Главная</a>
           </li>
           <li>
-            <a href="#">Галерея</a>
+            <a href="gallery.html">Галерея</a>
           </li>
           <li>
-            <a href="#">Как заказать</a>
+            <a href="order.html">Как заказать</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a href="contacts.html">Контакты</a>
           </li>
         </ul> <!-- /nav__list  -->
       </nav>
 
       <div class="order-call">
         <a class="order-call__phone" href="tel:+79859269955">+7 (985) 926 99 55</a>
-        <a class="btn btn--empty order-call__button js-order-call" href="#">Обратный звонок</a>
+        <a class="btn btn--empty order-call__button open-popup-link js-order-call" href="#callback">Обратный звонок</a>
+        <div id="callback" class="popup mfp-hide">
+          <div class="popup__top">Заполните поля и мы вам перезвоним</div>
+          <div class="popup__bottom">
+            <form method="post">
+              <input type="text" class="input input--callback" name="callback-name" placeholder="Имя">
+              <input type="tel" class="input input--callback" name="contacts-phone" placeholder="Телефон" required>
+              <select class="input input--callback" name="callback-time">
+                <option disabled selected>Удобное время</option>
+                <option value="1">с 9 до 12</option>
+                <option value="2">с 14 до 18</option>
+                <option value="3">с 18 до 21</option>
+              </select>
+              <button type="submit" class="btn btn--filled btn--callback">Вызов</button>
+            </form>
+          </div> <!-- /popup__bottom  -->
+        </div> <!-- /popup  -->
       </div> <!-- /order-call  -->
 
     </div> <!-- /header__top  -->
@@ -57,35 +73,33 @@
     <div class="header__bottom">
 
       <ul class="slider">
-        <li>
+        <li id="slide1">
           <figure>
-            <img src="img/content/slider/slide1.jpg" alt="Кованная мебель" width="1100" height="560">
+            <img src="img/content/slider/slide1.png" alt="Кованная мебель" width="1100" height="559">
             <figcaption>
-              <h2 class="title">Мой стиль - кованная мебель</h2>
+              <h2 class="slider__title">Мой стиль - кованная мебель</h2>
               <p>Мы воплощаем ваши мечты, изготовляя мебель в различных стилях</p>
             </figcaption>
           </figure>
         </li>
-        <li>
+        <li id="slide2">
           <figure>
-            <img src="img/content/slider/slide1.jpg" alt="Кованная мебель" width="1100" height="560">
+            <img src="img/content/slider/slide2.png" alt="Кованная мебель" width="1100" height="559">
             <figcaption>
-              <h2 class="title">2 Мой стиль - кованная мебель</h2>
+              <h2 class="slider__title">2 Мой стиль - кованная мебель</h2>
               <p>Мы воплощаем ваши мечты, изготовляя мебель в различных стилях</p>
             </figcaption>
           </figure>
         </li>
-        <li>
+        <li id="slide3">
           <figure>
-            <img src="img/content/slider/slide1.jpg" alt="Кованная мебель" width="1100" height="560">
+            <img src="img/content/slider/slide3.png" alt="Кованная мебель" width="1100" height="559">
             <figcaption>
-              <h2 class="title">3 Мой стиль - кованная мебель</h2>
+              <h2 class="slider__title">3 Мой стиль - кованная мебель</h2>
               <p>Мы воплощаем ваши мечты, изготовляя мебель в различных стилях</p>
             </figcaption>
           </figure>
         </li>
-
-
       </ul> <!-- /slider  -->
 
     </div> <!-- /header__bottom  -->
@@ -96,25 +110,25 @@
   <section class="features">
     <div class="container">
 
-      <h3 class="sub-title"><span>Почему выбирают нашу мебель?</span></h3>
+      <h3 class="features__title"><span>Почему выбирают нашу мебель?</span></h3>
 
       <ul class="features__list">
-          <li>
-            <div class="features__icon"><img src="img/icons/changes-ico.png" alt=""></div>
-            <p>Возможность внести измнения в уже готовые чертежи</p>
-          </li>
-          <li>
-            <div class="features__icon"><img src="img/icons/designer-ico.png" alt=""></div>
-            <p>Бесплатный выезд инженера-дизайнера</p>
-          </li>
-          <li>
-            <div class="features__icon"><img src="img/icons/warranty-ico.png" alt=""></div>
-            <p>Гарантия на металл и узлы 13 лет</p>
-          </li>
-          <li>
-            <div class="features__icon"><img src="img/icons/production-ico.png" alt=""></div>
-            <p>Собственное производство с 2000 года, и опытный состав кузнецов имеющих международный опыт</p>
-          </li>
+        <li>
+          <div class="features__icon"><img src="img/icons/changes-ico.png" alt=""></div>
+          <p>Возможность внести измнения в уже готовые чертежи</p>
+        </li>
+        <li>
+          <div class="features__icon"><img src="img/icons/designer-ico.png" alt=""></div>
+          <p>Бесплатный выезд инженера-дизайнера</p>
+        </li>
+        <li>
+          <div class="features__icon"><img src="img/icons/warranty-ico.png" alt=""></div>
+          <p>Гарантия на металл и узлы 13 лет</p>
+        </li>
+        <li>
+          <div class="features__icon"><img src="img/icons/production-ico.png" alt=""></div>
+          <p>Собственное производство с 2000 года, и опытный состав кузнецов имеющих международный опыт</p>
+        </li>
       </ul> <!-- /features__list  -->
 
     </div> <!-- /container  -->
@@ -129,50 +143,122 @@
           <p>Примеры готовых работ</p>
         </div>
         <div class="projects__link">
-          <a class="btn btn--filled" href="#">Галерея</a>
+          <a class="btn btn--filled" href="gallery.html">Галерея</a>
         </div>
       </div> <!-- /projects__top  -->
 
       <ul class="projects__list">
         <li>
-          <a href="#"><img src="img/content/examples/block1.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></a>
-          <div class="projects__name">Кровать Тиффани</div>
-          <div class="projects__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</div>
+          <a href="#product1" class="open-popup-link"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"><div class="projects__name">Кровать Тиффани</div></a>
+          <div id="product1" class="popup popup--projects mfp-hide">
+            <div class="popup__top">1 Кровать Тиффани</div>
+            <div class="popup__bottom">
+              <div class="popup__image"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></div>
+              <div class="popup__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam soluta mollitia, praesentium dolorum a voluptatum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, obcaecati.</p>
+                </div> <!-- /popup__text  -->
+            </div> <!-- /popup__bottom  -->
+          </div>
         </li>
         <li>
-          <a href="#"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></a>
-          <div class="projects__name">Кровать Тиффани</div>
-          <div class="projects__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</div>
+          <a href="#product2" class="open-popup-link"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"><div class="projects__name">Кровать Тиффани</div></a>
+          <div id="product2" class="popup popup--projects mfp-hide">
+            <div class="popup__top">2 Кровать Тиффани</div>
+            <div class="popup__bottom">
+              <div class="popup__image"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></div>
+              <div class="popup__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam soluta mollitia, praesentium dolorum a voluptatum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, obcaecati.</p>
+                </div> <!-- /popup__text  -->
+            </div> <!-- /popup__bottom  -->
+          </div>
         </li>
         <li>
-          <a href="#"><img src="img/content/examples/block3.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></a>
-          <div class="projects__name">Кровать Тиффани</div>
-          <div class="projects__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</div>
+          <a href="#product3" class="open-popup-link"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"><div class="projects__name">Кровать Тиффани</div></a>
+          <div id="product3" class="popup popup--projects mfp-hide">
+            <div class="popup__top">3 Кровать Тиффани</div>
+            <div class="popup__bottom">
+              <div class="popup__image"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></div>
+              <div class="popup__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam soluta mollitia, praesentium dolorum a voluptatum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, obcaecati.</p>
+                </div> <!-- /popup__text  -->
+            </div> <!-- /popup__bottom  -->
+          </div>
         </li>
         <li>
-          <a href="#"><img src="img/content/examples/block4.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></a>
-          <div class="projects__name">Кровать Тиффани</div>
-          <div class="projects__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</div>
+          <a href="#product4" class="open-popup-link"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"><div class="projects__name">Кровать Тиффани</div></a>
+          <div id="product4" class="popup popup--projects mfp-hide">
+            <div class="popup__top">4 Кровать Тиффани</div>
+            <div class="popup__bottom">
+              <div class="popup__image"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></div>
+              <div class="popup__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam soluta mollitia, praesentium dolorum a voluptatum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, obcaecati.</p>
+                </div> <!-- /popup__text  -->
+            </div> <!-- /popup__bottom  -->
+          </div>
         </li>
         <li>
-          <a href="#"><img src="img/content/examples/block5.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></a>
-          <div class="projects__name">Кровать Тиффани</div>
-          <div class="projects__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</div>
+          <a href="#product5" class="open-popup-link"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"><div class="projects__name">Кровать Тиффани</div></a>
+          <div id="product5" class="popup popup--projects mfp-hide">
+            <div class="popup__top">5 Кровать Тиффани</div>
+            <div class="popup__bottom">
+              <div class="popup__image"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></div>
+              <div class="popup__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam soluta mollitia, praesentium dolorum a voluptatum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, obcaecati.</p>
+                </div> <!-- /popup__text  -->
+            </div> <!-- /popup__bottom  -->
+          </div>
         </li>
         <li>
-          <a href="#"><img src="img/content/examples/block6.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></a>
-          <div class="projects__name">Кровать Тиффани</div>
-          <div class="projects__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</div>
+          <a href="#product6" class="open-popup-link"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"><div class="projects__name">Кровать Тиффани</div></a>
+          <div id="product6" class="popup popup--projects mfp-hide">
+            <div class="popup__top">6 Кровать Тиффани</div>
+            <div class="popup__bottom">
+              <div class="popup__image"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></div>
+              <div class="popup__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam soluta mollitia, praesentium dolorum a voluptatum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, obcaecati.</p>
+                </div> <!-- /popup__text  -->
+            </div> <!-- /popup__bottom  -->
+          </div>
         </li>
         <li>
-          <a href="#"><img src="img/content/examples/block7.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></a>
-          <div class="projects__name">Кровать Тиффани</div>
-          <div class="projects__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</div>
+          <a href="#product7" class="open-popup-link"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"><div class="projects__name">Кровать Тиффани</div></a>
+          <div id="product7" class="popup popup--projects mfp-hide">
+            <div class="popup__top">7 Кровать Тиффани</div>
+            <div class="popup__bottom">
+              <div class="popup__image"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></div>
+              <div class="popup__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam soluta mollitia, praesentium dolorum a voluptatum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, obcaecati.</p>
+                </div> <!-- /popup__text  -->
+            </div> <!-- /popup__bottom  -->
+          </div>
         </li>
         <li>
-          <a href="#"><img src="img/content/examples/block8.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></a>
-          <div class="projects__name">Кровать Тиффани</div>
-          <div class="projects__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</div>
+          <a href="#product8" class="open-popup-link"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"><div class="projects__name">Кровать Тиффани</div></a>
+          <div id="product8" class="popup popup--projects mfp-hide">
+            <div class="popup__top">8 Кровать Тиффани</div>
+            <div class="popup__bottom">
+              <div class="popup__image"><img src="img/content/examples/block2.jpg" alt="Кованная кровать Тиффани" width="266" height="210"></div>
+              <div class="popup__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo perferendis eaque, qui est magnam possimus maiores accusamus at dicta.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam soluta mollitia, praesentium dolorum a voluptatum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, obcaecati.</p>
+                </div> <!-- /popup__text  -->
+            </div> <!-- /popup__bottom  -->
+          </div>
         </li>
       </ul> <!-- /projects__list  -->
 
@@ -190,7 +276,7 @@
             <p>В творческой мастерской Krasivo.org, располагающей собственным производством, Вы сможете купить кованую мебель на заказ, которая характеризуется такими качествами как долговечность и надежность.</p>
           </div>
           <div class="order-link">
-            <a class="btn btn--empty" href="#">Как заказать</a>
+            <a class="btn btn--empty" href="order.html">Как заказать</a>
           </div>
         </div> <!-- /about__info  -->
 
@@ -202,51 +288,52 @@
   </section>
 
   <footer class="footer">
-    <div class="contacts">
-      <div class="contacts__phone">
-        <span>Телефон: </span><a href="tel:+79859269955">+7 (985) 926 99 55</a>
-      </div> <!-- /contacts__phone  -->
-      <div class="contacts__email">
-        <span>E-mail: </span><a href="mailto:info@krasivo.org">info@krasivo.org</a>
-      </div> <!-- /contacts__email  -->
-    </div> <!-- /contacts  -->
-    <nav class="footer__nav">
-      <ul class="footer__nav-list">
-        <li>
-          <a>Главная</a>
-        </li>
-        <li>
-          <a href="#">Галерея</a>
-        </li>
-        <li>
-          <a href="#">Как заказать</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-      </ul> <!-- /footer__nav-list  -->
-      <div class="copyright">&copy; 2017 krasivo.org</div>
-    </nav>
-    <div class="socials">
-      <ul class="socials__list">
-        <li class="socials__item socials__item--fb">
-          <a href="#">
-          <span class="visuallyhidden">Facebook</span>
-          </a>
-        </li>
-        <li class="socials__item socials__item--inst">
-          <a href="#"><span class="visuallyhidden">Instagram</span></a>
-        </li>
-        <li class="socials__item socials__item--vk">
-          <a href="#"><span class="visuallyhidden">Vkontakte</span></a>
-        </li>
-      </ul> <!-- /socials__list  -->
-    </div>
-
+    <div class="container">
+      <div class="contacts">
+        <div class="contacts__phone">
+          <span>Телефон: </span><a href="tel:+79859269955">+7 (985) 926 99 55</a>
+        </div> <!-- /contacts__phone  -->
+        <div class="contacts__email">
+          <span>E-mail: </span><a href="mailto:info@krasivo.org">info@krasivo.org</a>
+        </div> <!-- /contacts__email  -->
+      </div> <!-- /contacts  -->
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li>
+            <a>Главная</a>
+          </li>
+          <li>
+            <a href="gallery.html">Галерея</a>
+          </li>
+          <li>
+            <a href="order.html">Как заказать</a>
+          </li>
+          <li>
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul> <!-- /footer__nav-list  -->
+        <div class="copyright">&copy; 2017 krasivo.org</div>
+      </nav>
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__item socials__item--fb">
+            <a href="#">
+            <span class="visuallyhidden">Facebook</span>
+            </a>
+          </li>
+          <li class="socials__item socials__item--inst">
+            <a href="#"><span class="visuallyhidden">Instagram</span></a>
+          </li>
+          <li class="socials__item socials__item--vk">
+            <a href="#"><span class="visuallyhidden">Vkontakte</span></a>
+          </li>
+        </ul> <!-- /socials__list  -->
+      </div> <!-- /socials  -->
+    </div> <!-- /container  -->
   </footer>
 
-
 </div> <!-- /wrapper  -->
+
 <script src="js/main.min.js"></script>
 </body>
 </html>

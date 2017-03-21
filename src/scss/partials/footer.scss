@@ -2,9 +2,12 @@
   border-top: 1px solid $brown;
   padding-top: 26px;
   padding-bottom: 36px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .contacts {
@@ -68,27 +71,46 @@
   }
 
   &--fb a {
-    background: url('../../img/icons/icon-fb.png') center center no-repeat;
+    background: url('./../img/icons/icon-fb.png') center center no-repeat;
 
     &:hover {
-      background: url('../../img/icons/icon-fb-hover.png') center center no-repeat;
+      background: url('./../img/icons/icon-fb-hover.png') center center no-repeat;
     }
   }
 
   &--inst a {
-    background: url('../../img/icons/icon-insta.png') center center no-repeat;
+    background: url('./../img/icons/icon-insta.png') center center no-repeat;
 
     &:hover {
-      background: url('../../img/icons/icon-insta-hover.png') center center no-repeat;
+      background: url('./../img/icons/icon-insta-hover.png') center center no-repeat;
     }
   }
 
   &--vk a {
-    background: url('../../img/icons/icon-vk.png') center center no-repeat;
+    background: url('./../img/icons/icon-vk.png') center center no-repeat;
 
     &:hover {
-      background: url('../../img/icons/icon-vk-hover.png') center center no-repeat;
+      background: url('./../img/icons/icon-vk-hover.png') center center no-repeat;
     }
+  }
+}
+
+
+//adaptive
+
+@media screen and (max-width: 992px) {
+  .footer  .container{
+    flex-direction: column;
+  }
+
+  .contacts, .footer__nav, .socials {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer__nav {
+    order: 1;
   }
 }
 
